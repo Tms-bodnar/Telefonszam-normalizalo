@@ -43,7 +43,6 @@ public class TelefonszamNormalizalo {
             if (telSzam[i].charAt(1) == '0') {
                 telSzam[i].replace(1, 2, "3");
             }
-
             telSzam[i].insert(3, "-");
             if (telSzam[i].charAt(4) == '1') {
                 telSzam[i].insert(5, "-");
@@ -75,7 +74,6 @@ public class TelefonszamNormalizalo {
                 System.out.println(telSzam[i]);
             }
         }
-
         for (StringBuilder szam : telSzam) {
             System.out.println(szam);
         }
